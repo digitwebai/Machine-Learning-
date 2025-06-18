@@ -9,13 +9,13 @@ model.load_model('xgboost_conversion_model.json')
 
 
 # Title
-st.title(' Coversion Predictor ' )
+st.title(' Campaign Conversion Predictor ' )
 
 # Input fields
 conversion_rate = st.number_input('Conversion Rate', value=0.473823, step=0.01)
-metrics_clicks = st.number_input('Metrics Clicks', value=0.386222, step=0.01)
-metrics_impressions = st.number_input('Metrics Impressions', value=0.275707, step=0.01)
-cost_in_pounds = st.number_input('Cost in Pounds', value=0.263975, step=0.01)
+metrics_clicks = st.number_input('Metrics Clicks', value=12, step=0.01)
+metrics_impressions = st.number_input('Metrics Impressions', value=257, step=0.01)
+cost_in_pounds = st.number_input('Cost in Pounds', value=15, step=0.01)
 metrics_conversions_value = st.number_input('Metrics Conversions Value', value=0.224823, step=0.01)
 metrics_ctr=st.number_input('Metrics CTR', value=0.024823, step=0.01)
 # Predict button
